@@ -14,4 +14,18 @@ TEST(CalculatorTests,AssertAddFunction){
     //Assert - validate measurement points
     ASSERT_EQ(actualResult,expectedResult);
 
+
+}
+
+TEST(CalculatorTests,AssertAddFunction){
+    //Arrange - preconditions , prepare input data
+    int operand1=20;
+    int operand2=10;
+    int actualResult=0;
+    int expectedResult=10;
+    //Act - invoke code under test
+    actualResult=add(operand1,operand2);
+    //Assert - validate measurement points
+    ASSERT_EQ(actualResult,expectedResult);
+
 }
