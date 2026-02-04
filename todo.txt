@@ -1,0 +1,8 @@
+1.Refactor the code for Unit testability
+  a.Reduce Cyclomatic Complexity
+  b.Remove Code Duplication
+  c.Separte Dependencies
+  d.Abstract Dependencies
+
+2. Test All the Behvaior of function 
+
