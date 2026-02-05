@@ -20,12 +20,12 @@ class FooTest : public testing::Test {
 
   // You can define per-test set-up logic as usual.
   void SetUp() override { 
-    out<<"TestCase Setup"<<endl;
+    cout<<"TestCase Setup"<<endl;
    }
 
   // You can define per-test tear-down logic as usual.
   void TearDown() override {
-    out<<"TestCase Teardown"<<endl;
+    cout<<"TestCase Teardown"<<endl;
   }
 
   
