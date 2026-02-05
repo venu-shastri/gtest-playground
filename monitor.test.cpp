@@ -42,5 +42,5 @@ int actualResult=vitalsOk(98.6f, 101.0f, 98.0f,&DisplayTestDouble,&BlinkTestDoub
 //Asser on Mock State
 EXPECT_EQ(displayCallCount,1);
 EXPECT_EQ(blickCallCount,1);
-EXPECT_EQ(actualResult,1);
+EXPECT_EQ(actualResult,0);
 }
