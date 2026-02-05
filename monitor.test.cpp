@@ -31,6 +31,16 @@ TEST(MonitorTest,VitalAllOkTest){
 int actualResult=vitalsOk(98.6f,72.0f,98.0f,&DisplayTestDouble,&BlinkTestDouble);
 //Asser on Mock State
 EXPECT_EQ(displayCallCount,0);
-EXPECT_EQ(displayCallCount,0);
+EXPECT_EQ(blickCallCount,0);
+EXPECT_EQ(actualResult,1);
+}
+98.6f, 101.0f, 98.0f
+
+TEST(MonitorTest,PulseRateTooHigh_ReturnsNotO){
+    //Happy Path
+int actualResult=vitalsOk(98.6f, 101.0f, 98.0f,&DisplayTestDouble,&BlinkTestDouble);
+//Asser on Mock State
+EXPECT_EQ(displayCallCount,1);
+EXPECT_EQ(blickCallCount,1);
 EXPECT_EQ(actualResult,1);
 }
