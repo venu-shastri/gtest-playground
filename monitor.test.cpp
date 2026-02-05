@@ -1,7 +1,6 @@
 #include <gtest/gtest.h>
 #include "./monitor.h"
-#include <string>
-using namespace std;
+
 
 
 //Fake Dependencies - substitute real dependencies
